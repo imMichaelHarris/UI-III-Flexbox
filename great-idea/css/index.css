@@ -60,7 +60,152 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	width: 90%;
+	margin: auto;
+  }
+  header {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	padding: 20px;
+	background: aqua;
+	position: fixed;
+	font-family: 'Montserrat', sans-serif;
+  }
+  nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+  }
+  nav a {
+	color: #222;
+	text-decoration: none;
+	transition: all .3s ease-in;
+  }
+  nav a:hover{
+	color: #eee;
+  }
+  section{
+	margin-bottom: 40px;
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+  }
+  h1, .main-img {
+	font-size: 70px;
+  }
+  h1 {
+	text-align: center;
+  }
+  p {
+	  font-size: 18px;
+  }
+  section > div {
+	text-align: center;
+	margin: 50px;
+	height: 300px;
+  }
+  button {
+	border: 2px solid black;
+	background: white;
+	padding: 10px 50px;
+
+  }
+  .main-img {
+	background-image: url("https://raw.githubusercontent.com/LambdaSchool/User-Interface/master/great-idea-website/img/header-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 300px;
+	height: 300px
+  }
+  main {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  main, footer {
+	margin: 10px 0;
+	border-top: 2px solid black;
+	padding: 10px 0;
+  }
+  .middle-img {
+	margin: 40px 0;
+	width: 100%;
+	height: 180px;
+	background-image: url("https://raw.githubusercontent.com/LambdaSchool/User-Interface/master/great-idea-website/img/mid-page-accent.jpg");
+  
+  }
+  .colone, .coltwo {
+	width: 45%;
+	margin: 10px;
+  }
+  .twocolone, .twocoltwo, .twocolthree {
+	width: 30%;
+	margin: 10px;
+  }
+  footer {
+	padding-top: 50px;
+  }
+  footer p {
+	margin: 10px 0;
+  }
+  .copyright {
+	text-align: center;
+	margin-top: 30px;
+  }
+  /************ Services page specific styles ****************/
+  .services-header {
+	  height: 450px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+  }
+  h2 {
+	  font-size: 28px;
+  }
+  h3 {
+	  font-size: 20px;
+  }
+  .services-main {
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+  }
+  article {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  width: 480px;
+	  height: 300px;
+	  border: 1px solid black;
+	  margin: 15px;
+	  padding: 15px 30px;
+  }
+  article > button {
+	  height: 40px;
+	padding: 0 40px;
+	border-width: 1px;
+	border-radius: 5px;
+  }
+  .services-footer {
+	  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  .services-facts {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+  }
+  ul li{
+	  margin: 15px;
+	  list-style-type: square;
+  }
+  footer aside{
+	width: 50%;
+	padding: 10px;
+  }
