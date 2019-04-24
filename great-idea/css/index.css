@@ -64,22 +64,19 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body {
-	width: 90%;
+	width: 70%;
 	margin: auto;
   }
   header {
 	display: flex;
-	width: 90%;
 	justify-content: space-between;
-	padding: 20px;
-	background: aqua;
-	position: fixed;
+	padding: 20px 0;
 	font-family: 'Montserrat', sans-serif;
   }
   nav {
 	width: 70%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
   }
   nav a {
@@ -92,7 +89,6 @@ body {
   }
   section{
 	margin-bottom: 40px;
-	padding-top: 80px;
 	display: flex;
 	justify-content: center;
   }
@@ -159,10 +155,10 @@ body {
   }
   /************ Services page specific styles ****************/
   .services-header {
-	  height: 450px;
+	  height: 350px;
 	  display: flex;
 	  flex-direction: column;
-	  justify-content: space-around;
+	  justify-content: space-between;
   }
   h2 {
 	  font-size: 28px;
@@ -182,7 +178,7 @@ body {
 	  width: 480px;
 	  height: 300px;
 	  border: 1px solid black;
-	  margin: 15px;
+	  margin: 10px 0;
 	  padding: 15px 30px;
   }
   article > button {
@@ -206,6 +202,68 @@ body {
 	  list-style-type: square;
   }
   footer aside{
-	width: 50%;
-	padding: 10px;
+	width: 45%;
+	margin: 10px;
+  }
+
+
+  /********** Product styles **************/
+  .product-main {
+	  padding-top: 100px;
+	  margin: 0;
+	  border: none;
+  }
+  /************* Media queries *************/
+  @media (max-width: 800px){
+	  footer aside {
+		  width: 100%;
+		  text-align: center;
+	  }
+	  ul li {
+		list-style-type: none;
+	}
+  }
+  @media (max-width: 600px){
+	  body {
+		  width: 100vw;
+		  
+	  }
+	  header {
+		  display: flex;
+		  flex-direction: column-reverse;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  width: 100%;
+	  }
+	  nav {
+		  flex-wrap: wrap;
+		  align-self: center;
+		  font-size: 18px;
+		  padding: 15px;
+	  }
+	  nav a {
+		  margin: 10px;
+	  }
+	  .services-header {
+		  width: 90%;
+		  margin: auto;
+	  }
+	  footer {
+		  text-align: center;
+	  }
+	  footer aside {
+		  width: 100%;
+	  }
+	  .services-facts {
+		  justify-content: center;
+	  }
+	  ul li {
+		  list-style-type: none;
+	  }
+	  article {
+		  width: 400px;
+	  }
+	  .services-main {
+		  justify-content: center;
+	  }
   }
