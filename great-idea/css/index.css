@@ -60,7 +60,6 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -102,6 +101,9 @@ body {
   }
   h1 {
 	text-align: center;
+  }
+  p {
+	  font-size: 18px;
   }
   section > div {
 	text-align: center;
@@ -153,5 +155,57 @@ body {
   }
   .copyright {
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 30px;
+  }
+  /************ Services page specific styles ****************/
+  .services-header {
+	  height: 450px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+  }
+  h2 {
+	  font-size: 28px;
+  }
+  h3 {
+	  font-size: 20px;
+  }
+  .services-main {
+	  display: flex;
+	  justify-content: space-between;
+	  flex-wrap: wrap;
+  }
+  article {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  width: 480px;
+	  height: 300px;
+	  border: 1px solid black;
+	  margin: 15px;
+	  padding: 15px 30px;
+  }
+  article > button {
+	  height: 40px;
+	padding: 0 40px;
+	border-width: 1px;
+	border-radius: 5px;
+  }
+  .services-footer {
+	  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  .services-facts {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+  }
+  ul li{
+	  margin: 15px;
+	  list-style-type: square;
+  }
+  footer aside{
+	width: 50%;
+	padding: 10px;
   }
