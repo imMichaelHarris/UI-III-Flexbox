@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body {
-	width: 50%;
+	width: 880px;
 	margin: auto;
   }
   header {
@@ -175,8 +175,8 @@ body {
 	  display: flex;
 	  flex-wrap: wrap;
 	  justify-content: space-between;
-	  width: 480px;
-	  height: 300px;
+	  width: 420px;
+	  height: 280px;
 	  border: 1px solid black;
 	  margin: 10px 0;
 	  padding: 15px 30px;
